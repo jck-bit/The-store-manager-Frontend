@@ -50,6 +50,12 @@
     cursor: pointer;
 }
 
+/* .one{
+  color:black;
+  border: 1px solid yellow;
+  border-radius: 70%;
+} */
+
 .cart:hover{
     color: rgb(167, 184, 14);
 }
@@ -75,7 +81,6 @@ input[type=text]:focus{
     border: none;
     
 }
-
 
 .right{
     display: flex;
@@ -175,6 +180,4 @@ button:hover{
 .detail header{
     margin: 20px auto;
     border-bottom: 1px solid;
-
-
 }
