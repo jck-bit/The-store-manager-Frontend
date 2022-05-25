@@ -36,12 +36,14 @@
     margin-bottom: 30px;
 }
 
+
 .person{
     cursor: pointer;
+   
 }
 
 .person:hover{
-    color: rgb(167, 184, 14);
+    color: rgb(192, 192, 116);
 }
 
 .cart{
@@ -51,6 +53,7 @@
 .cart:hover{
     color: rgb(167, 184, 14);
 }
+
 
 input[type=text]{
     color: #949494;
@@ -91,10 +94,28 @@ input[type=text]:focus{
 .items{
     display: flex;
 }
+.icon{
+    margin-top: 7.5em;
+    cursor: pointer;
+    top: 55%;
+    color: rgb(199, 199, 81);
+    font-weight: bold;
+    margin-left: 10px;
+    
+}
+
+.icon-right{
+    margin-top: 7.5em;
+    cursor: pointer;
+    color: rgb(199, 199, 81);
+    font-weight: bold;
+    margin-right: 10px;
+}
 
 img{
     height: 240px;
     width: 310px;
+    
 }
 
 .info{
@@ -112,7 +133,7 @@ img{
 }
 
 .brand{
-   color: rgb(8, 8, 230);
+   color: rgb(122, 122, 16);
    font-size: 12px;
    letter-spacing: .1px;
    cursor: pointer;
@@ -129,7 +150,7 @@ button{
 }
 
 button:hover{
-    background-color: yellow;
+    background-color: rgb(192, 192, 116);
     transition: 1s;
 }
 
@@ -157,4 +178,3 @@ button:hover{
 
 
 }
-
