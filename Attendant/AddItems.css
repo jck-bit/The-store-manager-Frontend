@@ -1,0 +1,112 @@
+*{
+    padding: 0;
+    margin: 0;
+   font-family:  sans-serif;
+   
+}
+
+.header{
+    margin-top: 50px;
+    display: flex;
+    position: sticky;
+    flex-direction: column;
+    justify-content: center;
+    height: 82px;
+    background-color: rgb(248, 248, 248);
+    box-sizing: border-box;
+    box-shadow: 0 4px 4px -4px rgb(0 0 0 / 12%);
+}
+.store{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.head{
+    font-weight: normal;
+    font-size: 20px;
+    color:  #666060;
+}
+.input{
+    margin-bottom: 30px;
+}
+input[type=text]{
+    color: #949494;
+    background-color:#FFF;
+    border: 1px solid rgb(219, 207, 207);
+    padding: 9px 23px;
+    border-radius: 3px;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+}
+
+input[type=text]:focus{
+    outline: none;
+}
+
+.btn{
+    padding: 9px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    box-shadow: 1px 4px 8px 0 rgb(0 0 0 / 20%);
+}
+
+.middle{
+    width: 100%;
+    width: 50em;
+    height:30em;
+    display: flex;
+    border: 2px solid rgb(184, 169, 169); 
+    border-radius: 4px; 
+    margin: 5em;
+    /* margin-right: 50px; */
+}
+
+.items{
+    display: flex;
+}
+
+img{
+    height: 240px;
+    width: 310px;
+
+}
+
+.info{
+    padding-top: 1em;
+    height: 240px;
+    width: 310px;
+    letter-spacing: .5px;
+    font-size: large;
+    font-weight: bold;
+    margin-bottom: 1em;
+    
+}
+
+.shillings{
+    margin-top: 20px;
+}
+
+.brand{
+    color: rgb(8, 8, 230);
+    font-size: 12px;
+    letter-spacing: .1px;
+    cursor: pointer;
+    
+}
+
+button{
+    padding: 10px 100px;
+    font-weight: bold;
+    background-color: rgb(182, 182, 49);
+    border: 0 none;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 40px;
+}
+
+button:hover{
+    background-color: yellow;
+    transition: 1s;
+}
