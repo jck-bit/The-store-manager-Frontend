@@ -208,3 +208,10 @@ input[type=submit]{
 .check:hover{
    color: yellow;
 }
+
+@media screen and (max-width: 900px) {
+    .right {
+      display: flex;
+      flex-direction: column;
+    }
+  }
