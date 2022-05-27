@@ -1,0 +1,107 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family:  sans-serif;
+    background-color: #ffffff;
+  }
+
+.header{
+    margin-top: 50px;
+    display: flex;
+    position: sticky;
+    flex-direction: column;
+    height: 120px;
+    justify-content: center;
+    background-color: rgb(248, 248, 248);
+    box-sizing: border-box;
+    box-shadow: 0 4px 4px -4px rgb(0 0 0 / 12%);
+  }
+  
+  .store{
+    padding-left: 22%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+  }
+  
+  .head{
+    font-weight: normal;
+    font-size: 20px;
+    color:  #250e0e;
+    margin-right: 20px;
+  }
+  
+  .person{
+    cursor: pointer;
+    font-weight: bold;
+    margin-right: 50px;    
+  }
+  
+  .person:hover{
+    color: yellowgreen;
+  }
+  
+.all-sales{
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+@media screen and (max-width:800px) {
+    .all-sales{
+        display: grid;
+        grid-template-columns: auto auto;
+        row-gap: 20px;
+        column-gap:20px;
+    }
+}
+.personal{
+    height: 400px;
+    width:300px;
+    border-radius: 7px;
+    border: 2px solid rgb(204, 201, 201);
+    box-shadow: -11px -6px 5px 0px rgba(0,0,0,0.27);
+  -webkit-box-shadow: -11px -6px 5px 0px rgba(0,0,0,0.27);
+  -moz-box-shadow: -11px -6px 5px 0px rgba(0,0,0,0.27);
+}
+
+.name h1{
+    margin-left: 50px;
+    margin-right: 20px;
+    font-weight: normal;
+    padding-left: 50px;
+    border-bottom: 2px solid rgb(204, 201, 201);
+}
+
+.sales-details{
+    padding: 15px;
+    border-bottom: 2px solid rgb(204, 201, 201); ;
+    
+}
+.sales-details-span{
+    padding: 5px;
+    display: flex;
+    justify-content: space-around;
+}
+.p-name{
+    font-weight: bold;
+}
+
+span{
+    font-weight: bold;
+}
+
+.div-btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.btn{
+    background-color: rgb(125, 182, 11);
+    padding: 9px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 2px solid rgb(204, 201, 201);
+}
