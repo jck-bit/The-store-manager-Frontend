@@ -157,8 +157,8 @@ input[type=submit]{
 
 @media screen and (max-width: 768px){
     .container-left{
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(1, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
     }
 }
     
@@ -169,9 +169,12 @@ input[type=submit]{
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid;
     padding: 10px;
     border-radius: 5px;
+    border: 2px solid rgb(204, 201, 201);
+  box-shadow: -11px -6px 5px 0px rgba(0,0,0,0.27);
+  -webkit-box-shadow: -11px -6px 5px 0px rgba(0,0,0,0.27);
+  -moz-box-shadow: -11px -6px 5px 0px rgba(0,0,0,0.27);
 }
 
 img{
@@ -193,13 +196,3 @@ img{
     color: #fff;
 }
 
-#image{
-    height: 150px;
-    width: 250px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 5px solid;
-    padding: 10px;
-    border-radius: 5px;
-}
