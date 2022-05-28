@@ -4,8 +4,6 @@
     font-family:  sans-serif;
   }
 
-
-  
   .header{
       margin-top: 50px;
       display: flex;
@@ -86,8 +84,6 @@
     }
 }
 
-
-
 .shopping-left{
     width: 600px;
     margin: 25px auto;
@@ -111,12 +107,18 @@
     align-items: center;
  }
 .delete{
+    font-weight: bold;
+    color: rgb(148, 3, 3);
     display: flex;
     align-items: center;
     cursor: pointer;
+    border: 2px solid;
+    border-radius: 4px;
+    padding: 5px;
 }
 .delete:hover{
-    color: rgb(175, 66, 66);
+    background-color: rgb(184, 14, 14);
+    color: #FFF;
 }
 
  img{
