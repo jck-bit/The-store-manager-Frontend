@@ -5,7 +5,6 @@ function remove(){
     });                                                              
   }
 
-
 const addItem = document.forms['add-item'];
 
 addItem.addEventListener('submit', function(e){
@@ -60,8 +59,6 @@ addItem.addEventListener('submit', function(e){
     newDIV.appendChild(newDIV2);
     newDIV2.appendChild(newButton);
     document.querySelector('#admin').appendChild(newDIV4);
-
-
 
 
     //add event listener to the button
