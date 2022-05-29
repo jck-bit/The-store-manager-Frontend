@@ -145,20 +145,26 @@ input[type=submit]{
     background-color: rgb(182, 182, 49);
     border: 2px solid rgb(204, 201, 201);
 }
-
+.container-admin{
+    width: 1000px;
+    margin-left: 50px;
+}
 .container-left{
-    padding: 20px;
+    padding: 10px;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    row-gap: 20px;
-    column-gap: 20px;
+    justify-content: center;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(3,auto);
+    row-gap: 10px;
+    column-gap: 10px;
 }
 
 @media screen and (max-width: 768px){
     .container-left{
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
+        grid-template-rows: repeat(2,auto);
+        grid-template-columns:(2, auto);
+       row-gap: 10px;
+       column-gap: 10px
     }
 }
     
