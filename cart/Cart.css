@@ -25,6 +25,19 @@
       
   }
   
+  .back{
+    position: absolute;
+      left: 0;
+      top: 20;
+      cursor: pointer;
+}
+
+ .back:hover{
+       transform: scale(1.1);
+       border: 1px solid rgb(204, 201, 201);
+       border-radius: 50%;
+ }
+
   .head{
       font-weight: normal;
       font-size: 20px;
