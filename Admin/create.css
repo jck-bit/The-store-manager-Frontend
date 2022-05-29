@@ -77,7 +77,6 @@
       margin-top: 40px;  
   }
 
-  
   .btn:hover{
       background-color: rgb(192, 192, 116);
       transition: 1s;
@@ -99,8 +98,6 @@
     }
   }
       
-
-
 .main-boxes{
     position: relative;
     font-weight: bold;

@@ -7,7 +7,9 @@ body {
     padding: 0;
     font-family:  sans-serif;
     color: #F2F2F2;
+    /* background-color: #303641; */
     background-color: #303641;
+
 }
 
 .myn{
@@ -130,9 +132,3 @@ input[type=submit]{
    border-bottom: 1px solid #FFF;
 }  
 
-.footer .forgot-password{
-    font-weight: bold;
-}
-.footer .forgot-password:hover{
-    transform: scale(1.1);
-}

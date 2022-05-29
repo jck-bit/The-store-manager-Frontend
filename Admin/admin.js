@@ -15,6 +15,8 @@ addItem.addEventListener('submit', function(e){
 
 
     //create new div element
+    const newDIV6 = document.createElement('div');
+    const newDIV5 = document.createElement('div');
     const newDIV4 = document.createElement('div');
 
     const newDIV3 = document.createElement('div');
@@ -39,11 +41,10 @@ addItem.addEventListener('submit', function(e){
     //add content to the new image
     newImg.src = '../images /vanilla.jpg';
     newImg.alt = 'vanilla';
-
-    //add classes to the new div
-    newDIV4.classList.add('container-admin');
-    newDIV3.classList.add('container-left');
-    newDiv.classList.add('image');
+    newDIV6.classList.add('moral')
+    newDIV5.classList.add('admin');
+    newDIV4.classList.add('container-left')
+    newDIV3.classList.add('image');
     newDIV.classList.add('paragraph-icon');
     newPara.classList.add('p');
     newDIV2.classList.add('item-check');
@@ -51,6 +52,8 @@ addItem.addEventListener('submit', function(e){
 
     
     //append the new div to the dom
+    newDIV6.appendChild(newDIV5);
+    newDIV5.appendChild(newDIV4);
     newDIV4.appendChild(newDIV3);
     newDIV3.appendChild(newDiv);
     newDiv.appendChild(newImg);
@@ -58,14 +61,11 @@ addItem.addEventListener('submit', function(e){
     newDIV.appendChild(newPara);
     newDIV.appendChild(newDIV2);
     newDIV2.appendChild(newButton);
-    document.querySelector('#admin').appendChild(newDIV4);
-
-
+    document.querySelector('#moral').appendChild(newDIV6);
+      
     //add event listener to the button
     newButton.addEventListener('click', function(){
-        newDiv.remove();
-    }
-    );
-});
+        newDIV6.remove();
+    });
 
-
+  });
