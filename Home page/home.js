@@ -3,7 +3,7 @@ document.getElementById("submit").addEventListener("click", function() {
   })
 
 document.getElementById("holla").addEventListener("click", function() {
-    window.location.href = "../products/product.html"
+    window.location.href = "../Products/product.html"
   
 })
 
