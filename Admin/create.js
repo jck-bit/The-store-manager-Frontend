@@ -11,7 +11,6 @@ document.getElementById("sales").addEventListener("click", function(){
   window.location.href = "../sales/sales.html";
 });
 
-
-  document.getElementById("yoo").addEventListener('click', function(){
+document.getElementById("yoo").addEventListener('click', function(){
     window.location.href = "./Account.html";
   });
