@@ -158,3 +158,47 @@
 .btn-2:hover{
     transform: scale(0.9);
 }
+
+
+.jane{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+
+}
+ .image{
+     margin-right: 20px;
+ }
+
+img{
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+}
+
+h3{
+    margin-right: 20px;
+    font-weight: normal;
+}
+
+.sales-total{
+    height: 50px;
+    border-bottom: 1px solid;
+    display: flex;
+    justify-content: space-between;
+}
+
+.butt{
+     cursor: pointer;
+     margin-left: 150px;
+}
+
+button{
+    padding: 8px 20px;
+    border-radius: 4px;
+    border: 2px solid rgb(204, 201, 201);
+}
+
+button:hover{
+    transform: scale(0.9);
+}
