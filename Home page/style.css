@@ -226,3 +226,9 @@ button:hover{
     border-bottom: 3px solid rgb(204, 201, 201);
     padding: 20px;
 }
+
+.rights{
+    text-align: center;
+    font-size: 14px;
+    font-style:italic;
+}
