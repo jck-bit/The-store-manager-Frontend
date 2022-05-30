@@ -14,3 +14,7 @@ document.getElementById("sales").addEventListener("click", function(){
 document.getElementById("yoo").addEventListener('click', function(){
     window.location.href = "./Account.html";
   });
+
+  document.getElementById("back").addEventListener('click', function(){
+    window.location.href = "./Login.html";
+  });

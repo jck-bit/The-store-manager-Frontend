@@ -14,3 +14,8 @@ document.getElementById("cart").addEventListener('click', function(){
 document.getElementById("back").addEventListener('click', function(){
     window.location.href = "../index.html"
 })
+
+
+document.getElementById("jane").addEventListener('click', function(){
+    window.location.href = "./profile.html"
+})

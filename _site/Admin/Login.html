@@ -18,7 +18,7 @@
                 <input type="checkbox">
                 <span style="color: #DDD">Remember Me</span>
             </div>
-               <input type="submit" value="Log in" id="submit" onclick="return redirect()">            
+               <input type="submit" value="Log in" id="submit">            
         </form>
         <div class="forgot-password">
             <a href="#">Forgot your password?</a>
@@ -26,14 +26,12 @@
         <div class="privacy">
             <a href="#">Privacy Policy</a>
         </div>
-        <div class="footer"></div>
+        <div class="footer">
+            <div class="forgot-password">
+                <a id="footer">Log in as attendant</a>
+            </div>
+        </div>
     </div>
-    <script>
-        function redirect() {
-            document.getElementById("submit").addEventListener("click", function(){
-            window.location.href = "./create.html";
-            });
-        }
-    </script>
+    <script src="./yello.js"></script>
 </body>
 </html> 

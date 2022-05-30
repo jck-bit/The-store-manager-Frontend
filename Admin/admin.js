@@ -64,3 +64,7 @@ addItem.addEventListener('submit', function(e){
  
     })
   });
+
+  document.getElementById("back").addEventListener('click', function(){
+    window.location.href = "./create.html"
+})
