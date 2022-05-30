@@ -7,9 +7,7 @@ var btn = document.getElementById("edit");
 btn.addEventListener("click", buttonClicked, true);
 }
 
-document.getElementById("sales").addEventListener("click", function(){
-  window.location.href = "../sales/sales.html";
-});
+
 
 document.getElementById("yoo").addEventListener('click', function(){
     window.location.href = "./Account.html";
@@ -18,4 +16,10 @@ document.getElementById("yoo").addEventListener('click', function(){
   document.getElementById("back").addEventListener('click', function(){
     window.location.href = "./Login.html";
   });
+
+  document.getElementById("inventory").addEventListener('click', function(){
+    window.location.href = "./product.html";
+  });
+
+
 
