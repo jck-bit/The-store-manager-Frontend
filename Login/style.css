@@ -94,6 +94,7 @@ input[type=submit]{
 .forgot-password{
     position: relative;
     margin: auto;
+    cursor: pointer;
 }
 
 .forgot-password a{
