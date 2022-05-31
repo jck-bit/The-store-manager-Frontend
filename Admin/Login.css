@@ -12,6 +12,12 @@ body {
 
 }
 
+.back{
+    position: absolute;
+    left: 10px;
+    top: 20;
+    cursor: pointer;
+}
 .myn{
     position: absolute;
     top: 50%;

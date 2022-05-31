@@ -1,10 +1,14 @@
 <!DOCTYPE html>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="Login.css">
     <title>Create Account</title>
 </head>
 <body>
+    <div class="back" id="back" onclick="return redirect()">
+        <i class="material-icons">arrow_back</i>
+    </div>
     <div class="container-login">
         <div class="title">Create Account</div>
         <form>
@@ -26,7 +30,7 @@
     </div>
     <script>
         function redirect() {
-            document.getElementById("submit").addEventListener("click", function(){
+            document.getElementById("back").addEventListener("click", function(){
             window.location.href = "./create.html";
             });
         }
