@@ -84,6 +84,14 @@ input[type=text]{
    column-gap: 20px;
 }
 
+@media screen and (max-width: 700px){
+  .all-over{
+    grid-template-columns: auto auto;
+  }
+}
+  
+
+
 .one-sale{
   width: 250px;
   display: flex;
