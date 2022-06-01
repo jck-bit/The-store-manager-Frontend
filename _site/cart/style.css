@@ -191,11 +191,11 @@
   }
   .detail header{
       margin: 20px auto;
-      border-bottom: 1px solid;
+      border-bottom:  2px solid rgb(226, 215, 215);
   }
   
   .detail-p{
-      border-bottom: 1px solid;
+      border-bottom:2px solid rgb(226, 215, 215);; 
       padding-bottom: 5px;
   }
   

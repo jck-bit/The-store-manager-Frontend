@@ -7,8 +7,6 @@ var btn = document.getElementById("edit");
 btn.addEventListener("click", buttonClicked, true);
 }
 
-
-
 document.getElementById("yoo").addEventListener('click', function(){
     window.location.href = "./Account.html";
   });
