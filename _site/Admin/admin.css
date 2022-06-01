@@ -184,7 +184,7 @@ input[type=submit]{
 
 .image{
     height: 150px;
-    width: 250px;
+    width: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -202,6 +202,7 @@ img{
 
 
 .remove{
+    margin-right: 5px;
     margin-top: 10px;
     padding: 5px 10px;
     border: 1px solid;
@@ -215,3 +216,21 @@ img{
     color: #fff;
 }
 
+.item-check{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.edit{
+    margin-top: 10px;
+    padding: 5px 10px;
+    border: 1px solid;
+    border-radius: 3px;
+    cursor: pointer;
+    border: 2px solid rgb(204, 201, 201);
+}
+
+.edit:hover{
+    background-color: orange;
+    color: #fff;
+}

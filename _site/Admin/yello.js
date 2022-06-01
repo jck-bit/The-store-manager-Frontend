@@ -6,3 +6,7 @@
 document.getElementById("submit").addEventListener("click", function(){
     window.location.href = "./create.html";
 });
+
+document.getElementById("back").addEventListener('click', function(){
+    window.location.href = "./Login.html";
+})

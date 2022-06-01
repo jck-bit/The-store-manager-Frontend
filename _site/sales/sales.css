@@ -84,6 +84,17 @@ input[type=text]{
    column-gap: 20px;
 }
 
+.all-over{
+  border-bottom: 2.2px solid rgb(204, 201, 201);;
+  margin: 20px;
+}
+
+@media screen and (max-width: 700px){
+  .all-over{
+    grid-template-columns: auto auto;
+  }
+}
+
 .one-sale{
   width: 250px;
   display: flex;
@@ -117,7 +128,7 @@ img{
 }
 .total{
   padding-bottom: 5px;
-  border-bottom: 2px solid rgb(204, 201, 201);
+  border-bottom: 2px solid rgb(133, 84, 84);
 }
 
 .date{
