@@ -53,12 +53,19 @@
   .person{
       cursor: pointer;   
       font-weight: bold;
+      display: flex;
+      align-items: center;
   }
   
   .person:hover{
-      color: greenyellow;
+      color: orange;
   }
-  
+  .image-yusuf{
+    height:30px;
+    width:30px;
+    border-radius: 50%;
+    margin-right: 5px;
+  }
   .cart{
       cursor: pointer;
       font-weight: bold;
@@ -112,8 +119,9 @@
     display: flex;
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 800px){
     .container-admin{
+        display: flex;
         flex-direction: column;
     }
   
@@ -172,10 +180,10 @@ input[type=submit]{
     column-gap: 10px;
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 800px){
     .container-left{
-        grid-template-rows: repeat(2,auto);
-        grid-template-columns:(2, auto);
+        grid-template-rows: repeat(auto);
+        grid-template-columns:( auto);
        row-gap: 10px;
        column-gap: 10px
     }
