@@ -3,12 +3,8 @@
     margin: 0;
     font-family:  sans-serif;
   }
-
-  .container{
-      position: relative;
-  }
   
-  .header{
+ .header{
       margin-top: 50px;
       display: flex;
       position: sticky;
@@ -26,8 +22,7 @@
       width: 100%;
       display: flex;
       justify-content: space-evenly;
-      align-items: center;
-      
+      align-items: center;      
   }
   .back{
     position: absolute;
@@ -106,12 +101,12 @@
 
 .personal-sales{
     padding: 20px;
-    position: relative;
     justify-content: center;
      
 }
 .box-one{
-    width: 490px;
+    padding: 5px;
+    width: 470px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -126,13 +121,13 @@
 }
 
 img{
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
 }
 
 .info{
-    margin-right: 30px;
+   margin-right: 30px;
 }
 
 .price{

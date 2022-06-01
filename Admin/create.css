@@ -5,16 +5,16 @@
   }
   
 .header{
-      margin-top: 50px;
-      display: flex;
-      position: sticky;
-      flex-direction: column;
-      justify-content: center;
-      height: 82px;
-      background-color: rgb(248, 248, 248);
-      box-sizing: border-box;
-      box-shadow: 0 4px 4px -4px rgb(0 0 0 / 12%);
-      position: relative;
+    margin-top: 50px;
+    display: flex;
+    position: sticky;
+    flex-direction: column;
+    justify-content: center;
+    height: 82px;
+    background-color: rgb(248, 248, 248);
+    box-sizing: border-box;
+    box-shadow: 0 4px 4px -4px rgb(0 0 0 / 12%);
+    position: relative;
   }
   
   .store{
@@ -27,34 +27,45 @@
   }
   .back{
     position: absolute;
-      left: 0;
-      top: 20;
-      cursor: pointer;
+    left: 0;
+    top: 20;
+    cursor: pointer;
 }
 
  .back:hover{
-       transform: scale(1.1);
-       border: 1px solid rgb(204, 201, 201);
-       border-radius: 50%;
+    transform: scale(1.1);
+    border: 1px solid rgb(204, 201, 201);
+    border-radius: 50%;
  }
   
   .head{
-      font-weight: normal;
-      font-size: 20px;
-      color:  #666060;
+    font-weight: normal;
+    font-size: 20px;
+    color:  #666060;
   }
   
   .input{
-      margin-bottom: 30px;
+    margin-bottom: 30px;
   }
   
   .person{
-      cursor: pointer;   
-      font-weight: bold;
+    cursor: pointer;   
+    font-weight: bold;
+    display: flex;
+    align-items: center;
   }
   
+
+  .image-yusuf{
+    height:30px;
+    width:30px;
+    border-radius: 50%;
+    margin-right: 5px;
+    border: 1px solid rgb(219, 207, 207);
+  }
+
   .person:hover{
-      color: greenyellow;
+      color:orange;
   }
   
   .cart{
@@ -63,7 +74,7 @@
   }
    
   .cart:hover{
-      color: greenyellow;
+      color: orange;
   }
   
   input[type=text]{
@@ -156,7 +167,7 @@
 
 .btn-2{
     position: absolute;
-    background-color: rgb(42, 197, 218); 
+    background-color: orange; 
     border: none;
     border-radius: 5px;
     padding: 9px 30px;

@@ -45,11 +45,19 @@
       color:  #250e0e;
       margin-right: 20px;
   }
+  .jane-image{
+      height:30px;
+      width:30px;
+      border-radius: 50%;
+      margin-right: 5px;
+  }
   
   .person{
       cursor: pointer;
       font-weight: bold;
-      margin-right: 50px;    
+      margin-right: 50px;  
+      display: flex;  
+      align-items: center;
   }
   
   .person:hover{
@@ -188,8 +196,6 @@
 }
 
 img{
-   height: 90px;
-   width: 90px;
    border-radius: 50%;
 }
 
