@@ -1,7 +1,7 @@
 *{
     padding: 0;
     margin: 0;
-    font-family: Tahoma;
+    font-family: serif;
   }
   
 .header{
@@ -39,6 +39,19 @@
        border-radius: 50%;
  }
   
+
+ .person{
+     display: flex;
+     align-items: center;
+     cursor: pointer;
+     font-weight: bold;
+ }
+ .image-jane{
+    height:30px;
+    width: 30px;
+    border-radius: 50%;
+    margin-right: 5px;
+ }
   .head{
       font-weight: normal;
       font-size: 20px;

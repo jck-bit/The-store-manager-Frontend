@@ -50,21 +50,20 @@
   .person{
       cursor: pointer;   
       font-weight: bold;
+      display: flex;
+      align-items: center;
   }
   
   .person:hover{
-      color: greenyellow;
+      color: green;
   }
-  
-  .cart{
-      cursor: pointer;
-      font-weight: bold;
+  .image-jane{
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      margin-right: 5px;
   }
-   
-  .cart:hover{
-      color: greenyellow;
-  }
-  
+
   input[type=text]{
       color: #383333;
       background-color:#FFF;
@@ -99,14 +98,14 @@
       transition: 1s;
   }
 
-.personal-sales{
+.content{
     padding: 20px;
-    justify-content: center;
-     
+    display: grid;
+    margin-left: 20%;
 }
 .box-one{
+    margin:10px;
     padding: 5px;
-    width: 470px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
