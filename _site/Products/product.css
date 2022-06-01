@@ -127,7 +127,10 @@ p{
     margin-left: 3px;
 }
 .image img{
+    margin-right: 8px;
     height: 80px;
+    border: 2px solid rgb(204, 201, 201);
+    border-radius: 50%;
 }
 
 .item-check .material-icons{
