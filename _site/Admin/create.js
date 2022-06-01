@@ -21,5 +21,7 @@ document.getElementById("yoo").addEventListener('click', function(){
     window.location.href = "./product.html";
   });
 
-
+  document.getElementById("klasik").addEventListener('click', function(){
+    window.location.href = "./admin-profile.html";
+  });
 
