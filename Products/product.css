@@ -48,13 +48,21 @@
       margin-bottom: 30px;
   }
   
+  .image-jane{
+        height:30px;
+        width:30px;
+        border-radius: 50%;
+        margin-right: 5px;
+  }
   .person{
       cursor: pointer;   
       font-weight: bold;
+      display: flex;
+      align-items: center;
   }
   
   .person:hover{
-      color: greenyellow;
+      color: rgb(114, 173, 24);
   }
   
   .cart{
@@ -63,7 +71,7 @@
   }
    
   .cart:hover{
-      color: greenyellow;
+      color: rgb(114, 173, 24);
   }
   
   input[type=text]{

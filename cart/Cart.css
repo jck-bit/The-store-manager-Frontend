@@ -45,21 +45,22 @@
   }
   
   .person{
-      cursor: pointer;   
+      cursor: pointer;  
+      font-weight: bold;
+      display: flex;
+      align-items: center; 
   }
   
   .person:hover{
-      color: rgb(192, 192, 116);
+      color: rgb(6, 177, 6);
   }
-  
-  .cart{
-      cursor: pointer;
+  .image-jane{
+      height:30px;
+      width:30px;
+      border-radius: 50%;
+      margin-right: 5px;
   }
-  
-  .cart:hover{
-      color: rgb(167, 184, 14);
-  }
-  
+ 
   
   input[type=text]{
       color: #949494;

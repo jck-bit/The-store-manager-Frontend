@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     font-family:  sans-serif;
-    background-color: #ffffff;
+    background-color: #fff;
   }
 
   .header{
@@ -37,19 +37,22 @@ input[type=text]{
   box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
 }
 
-  .back{
-    position: absolute;
-      left: 0;
-      top: 20;
-      cursor: pointer;
+.back{
+  position: absolute;
+  left: 0;
+  top: 20;
+  cursor: pointer;
 }
 
- .back:hover{
-       transform: scale(1.1);
-       border: 1px solid rgb(204, 201, 201);
-       border-radius: 50%;
- }
+.back:hover{
+  transform: scale(1.1);
+  border: 1px solid rgb(204, 201, 201);
+  border-radius: 50%;
+}
 
+.cart{
+  cursor: pointer;
+}
   
   .head{
     font-weight: normal;
@@ -65,11 +68,11 @@ input[type=text]{
   }
   
   .person:hover{
-    color: yellowgreen;
+    color: orange;
   }
   
   .btn{
-    background-color: rgb(125, 182, 11);
+    background-color: orange;
     padding: 9px 20px;
     border-radius: 4px;
     cursor: pointer;
@@ -77,8 +80,8 @@ input[type=text]{
 }
 
 .all-over{
-  padding: 20px;
-  display: grid;
+   padding: 20px;
+   display: grid;
    grid-template-columns: auto auto auto ;
    row-gap: 20px;
    column-gap: 20px;
@@ -107,9 +110,9 @@ input[type=text]{
 }
 
 .sales-info h2{
-   font-weight: normal;
-    font-size: 20px;
-    padding-bottom: 5px;
+  font-weight: normal;
+  font-size: 20px;
+  padding-bottom: 5px;
 }
 
 img{
@@ -127,10 +130,11 @@ img{
   font-weight: bold;
 }
 .total{
-  padding-bottom: 5px;
-  border-bottom: 2px solid rgb(133, 84, 84);
+  padding-bottom: 10px;
+  border-bottom:  2px solid rgb(204, 201, 201);
 }
 
 .date{
-  padding-bottom: 5px;
+  padding-bottom: 10px;
+  border-bottom:  2px solid rgb(204, 201, 201);
 }

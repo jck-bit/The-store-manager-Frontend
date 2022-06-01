@@ -48,32 +48,27 @@
   .input{
       margin-bottom: 30px;
   }
-  
-  
+    
   .person{
       cursor: pointer;
-     
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-weight: bold;     
   }
   
   .person:hover{
-      color: rgb(192, 192, 116);
-  }
-  
-  .cart{
-      cursor: pointer;
-  }
-  
-  /* .one{
-    color:black;
-    border: 1px solid yellow;
-    border-radius: 70%;
-  } */
-  
-  .cart:hover{
-      color: rgb(167, 184, 14);
-  }
-  
-  
+    color: rgb(6, 177, 6);
+ }
+
+ .image-jane{
+     height:30px;
+     width:30px;
+     border-radius: 50%;
+     margin-right: 5px;
+ }
+ 
+ 
   input[type=text]{
       color: #949494;
       background-color:#FFF;
