@@ -1,10 +1,27 @@
-# Level_upThis is a branch of the master branch which contains the store- manager project where:
-*where a store attendant can do the following: 
-*Add products to shopping cart, and create sale record.
-View sale records created by the individual store attendant, which cannot be edited.
-Also View all available products. 
-View an individual product details such as the quantity in inventory
-and also the minimum inventory quantity allowed at any time.
+# store- manager project
+ The store Manger is a web store that allows users to add, edit, and delete products.This project is only a prototype and is not intended to be a full-functional web store. 
+ # Attendant
+ ```
+  1. can Add products to shopping cart, and create sale record.
+  2. View sale records created by the individual store attendant,      which cannot be edited or deleted.
+ 3. Also View all available products. 
+ 4. View an individual product details such as the quantity in     inventory
+   and also the minimum inventory quantity allowed at any time. 
+```
+## An Admin Can 
+```
+1. Create a new sale attendant user account. 
+2. Create, modify and delete a product.
+3. View sale records by all store   attendants.
+```
+# screenshots
+ The Admin page,
+ ![alternate text](./images%20/admin.jpeg)
 
-An Admin can: Create a new sale attendant user account. 
-Create, modify and delete a product. View sale records by all store attendants.
+### An Inventory page,
+ ![alternate text](./images%20/inventory.jpeg)
+# Open store Manager app
+To open [click me](https://jck-bit.github.io/Level_up/)
+
+# Authors
+ Jack -[Jck Bit]()
