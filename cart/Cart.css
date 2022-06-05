@@ -52,7 +52,7 @@
   }
   
   .person:hover{
-      color: rgb(6, 177, 6);
+      color: #303641;
   }
   .image-jane{
       height:30px;
@@ -79,11 +79,8 @@
       border-radius: 4px;
       cursor: pointer;
       border: none;
-      background-color: yellowgreen;      
- }
- .btn:hover{
-    background-color:rgb(245, 209, 9);
-    color: #333;
+      color: #fff;
+      background-color: #303641;      
  }
   
 .shopping{
@@ -180,10 +177,7 @@ h3{
     font-weight: bold;
     background-color: rgb(245, 209, 9);
 }
-.shopping-right button:hover{
-    color: #fff;
-    background-color: yellowgreen;
-}
+
 
 @media screen and (max-width: 992px) {
     .shopping {

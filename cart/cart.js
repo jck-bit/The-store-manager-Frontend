@@ -16,3 +16,5 @@ document.getElementById("profile").addEventListener('click', function(){
 document.getElementById("klick").addEventListener('click', function(){
     window.location.href = "./Cart.html"
 })
+
+
