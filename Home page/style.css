@@ -59,18 +59,14 @@
       display: flex;  
       align-items: center;
   }
-  
-  .person:hover{
-      color: yellowgreen;
-  }
-  
+   
   .cart{
       cursor: pointer;
       font-weight: bold;
   }
   
   .cart:hover{
-      color: yellowgreen;
+      color: #1A1C1D;
   }
 
  .app-settings{
@@ -101,11 +97,7 @@
     border-radius: 4px;
     cursor: pointer;
     border: none;
-    background-color: yellowgreen;      
-}
-.btn:hover{
-  background-color:rgb(245, 209, 9);
-  color: #333;
+    background-color:#303641;      
 }
 
 .admin-flexes{
@@ -168,8 +160,9 @@
 }
 
 .btn-2{
+   color: #fff;
    position: absolute;
-   background-color: rgb(212, 156, 35); 
+   background-color: #303641; 
    border: none;
    border-radius: 5px;
    padding: 9px 30px;

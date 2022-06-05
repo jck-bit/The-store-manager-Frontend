@@ -2,12 +2,36 @@
     box-sizing: border-box;
     padding: 0;
 }
+
 body {
     margin: 0;
     padding: 0;
     font-family:  sans-serif;
     color: #F2F2F2;
     background-color: #303641;
+}
+
+.login-container-body{
+    width: 100%;
+    margin-left:20%;
+    margin-top: 5%;
+    padding: 15px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 700px;
+
+}
+
+@media screen and (max-width: 800px) {
+    .login-container-body{
+        flex-direction: column;
+    }
+    
+}
+
+p{
+    font-weight: bold;
 }
 
 .myn{
@@ -22,7 +46,7 @@ body {
     margin: auto;
     margin-top: 5em;
     width: 340px;
-    height: 445px;
+    height: 410px;
     border-radius: 0.35em;
     box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.2);
     text-align: center;
@@ -88,7 +112,6 @@ input[type=submit]{
     cursor: pointer;
     border-radius: 4px;
     margin: 15px auto;
-
 }
 
 .forgot-password{

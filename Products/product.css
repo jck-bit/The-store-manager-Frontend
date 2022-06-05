@@ -94,9 +94,10 @@
       border: none;     
   }
   button{
+      color: #fff;
     padding: 10px 100px;
     font-weight: bold;
-    background-color: rgb(182, 182, 49);
+    background-color: #303641;
     border: 0 none;
     cursor: pointer;
     border-radius: 4px;
@@ -104,8 +105,7 @@
   }
   
   button:hover{
-      background-color: rgb(192, 192, 116);
-      transition: 1s;
+      transform: scale(1.1);
   }
 
 .available-products{
@@ -126,11 +126,11 @@
   padding: 20px;
   border-radius: 4px;
   border: 2px solid rgb(204, 201, 201);
-  box-shadow: -11px -6px 5px 0px rgba(0,0,0,0.27);
+  /* box-shadow: -11px -6px 5px 0px rgba(0,0,0,0.27);
   -webkit-box-shadow: -11px -6px 5px 0px rgba(0,0,0,0.27);
   -moz-box-shadow: -11px -6px 5px 0px rgba(0,0,0,0.27);
+ */
 }
-
 p{
     margin-left: 3px;
 }
