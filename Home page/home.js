@@ -7,7 +7,7 @@ document.getElementById("holla").addEventListener("click", function() {
 });
 
 document.getElementById("cart").addEventListener('click', function(){
-    window.location.href = "../cart/adding.html"
+    window.location.href = "../cart/Cart.html"
 });
 
 document.getElementById("back").addEventListener('click', function(){
