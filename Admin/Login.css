@@ -24,7 +24,6 @@ body {
     transform: translate(-50%, -50%);
 }  
 
-
 .login-container-body{
     width: 100%;
     margin-left:20%;
@@ -34,16 +33,13 @@ body {
     justify-content: space-evenly;
     align-items: center;
     width: 700px;
-
 }
 
 @media screen and (max-width: 800px) {
     .login-container-body{
         flex-direction: column;
-    }
-    
+    }    
 }
-
 
 p{
     font-weight: bold;
@@ -101,7 +97,6 @@ input[type=password]{
     border: 1px solid #373b3d;
     padding: 6px 0px;
     border-radius: 3px;
-
 }
 
 input[type=password]:focus{
@@ -121,7 +116,6 @@ input[type=submit]{
     cursor: pointer;
     border-radius: 4px;
     margin: 15px auto;
-
 }
 
 .forgot-password{
