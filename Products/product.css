@@ -88,21 +88,18 @@
   }
   
   .btn{
-      padding: 9px 10px;
-      border-radius: 4px;
-      cursor: pointer;
-      border: none;     
-  }
-  button{
-      color: #fff;
-    padding: 10px 100px;
-    font-weight: bold;
+    padding: 9px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;   
+    color: #fff;
     background-color: #303641;
     border: 0 none;
-    cursor: pointer;
     border-radius: 4px;
     margin-top: 40px;
   }
+  
+  
   
   button:hover{
       transform: scale(1.1);
@@ -150,22 +147,27 @@ p{
 }
 
 .item-check-orange{
-    color: orange;
-    font-weight: bold;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    margin-top: 10px;
-    width: 140px;
-    border: 2px solid rgb(204, 201, 201);
-    border-radius: 4px;
-    cursor: pointer;
+    
 }
 
-.item-check-orange:hover{
-    background-color: orange;
+button{
+    padding: 9px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;   
     color: #fff;
+    background-color: #303641;
+    border: 0 none;
+    border-radius: 4px;
+    margin-top: 40px;
+    margin-right: 3px;
+    margin-left: 3px;
 }
+
+
 
 .item-check-green{
     font-weight: bold;
