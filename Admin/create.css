@@ -64,8 +64,8 @@
     border: 1px solid rgb(219, 207, 207);
   }
 
-  .person:hover{
-      color:orange;
+  .person{
+      font-weight: bold;
   }
   
   .cart{
@@ -73,9 +73,6 @@
       font-weight: bold;
   }
    
-  .cart:hover{
-      color: orange;
-  }
   
   input[type=text]{
       color: #383333;
@@ -96,13 +93,9 @@
       cursor: pointer;
       border: none; 
       font-weight: bold;
-      background-color: rgb(214, 139, 0);  
+      background-color: #303641;  
+      color: #fff;
       margin-top: 40px;  
-  }
-
-  .btn:hover{
-      background-color: rgb(192, 192, 116);
-      transition: 1s;
   }
 
   .admin-flexes{
@@ -167,7 +160,8 @@
 
 .btn-2{
     position: absolute;
-    background-color: orange; 
+    background-color: #303641;  
+    color: #fff;
     border: none;
     border-radius: 5px;
     padding: 9px 30px;

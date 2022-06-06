@@ -48,6 +48,8 @@
   .person{
       display: flex;
       align-items: center;
+      font-weight: bold;
+
   }
   
  .image-yusuf{
@@ -121,7 +123,7 @@
 .btn-2{
     color: #FFF;
     position: absolute;
-    background-color: orange; 
+    background-color: #303641;; 
     border: none;
     border-radius: 5px;
     padding: 9px 30px;
