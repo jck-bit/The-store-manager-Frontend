@@ -99,17 +99,14 @@
   cursor: pointer;
   border: none;    
   font-weight: bold;
-  background-color: rgb(182, 182, 49);
+  background-color: #303641;  
+  color: #fff;
   border: 0 none;
   cursor: pointer;
   border-radius: 4px;
   margin-left: 5px;
 }
 
-.input-store button:hover{
-    background-color: rgb(192, 192, 116);
-    transition: 1s;
-}
 
 
 .container-admin{
