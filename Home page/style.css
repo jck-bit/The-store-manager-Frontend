@@ -3,7 +3,70 @@
     margin: 0;
     font-family:  sans-serif;
     background-color: #ffffff;
- }
+}
+.navbar-menu{
+     padding-top: 20px;
+     height: 60px;
+     border-bottom: 1px solid #303641;   
+    
+}
+
+.navbar-menu ul{
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;  
+    float: right;
+    
+}
+
+
+.Logout{
+    margin-left: 100px;
+    border: none;
+    background-color:rgb(204, 201, 201);
+    padding: 3px 5px;
+    border-radius: 5px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    cursor: pointer;
+}
+
+.Logout:hover{
+    transform: scale(0.9);
+}
+
+.material-icons{
+    background-color: transparent;
+}
+
+.loginbar{
+    border: none;
+    background-color: rgb(204, 201, 201);
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    cursor: pointer;
+}
+.loginbar:hover{
+    transform: scale(0.9);
+}
+
+li{
+    background-color: transparent;
+}
+a{
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    background-color: transparent;
+}
+
  .header{
     margin-top: 50px;
     display: flex;
@@ -59,7 +122,7 @@
       display: flex;  
       align-items: center;
   }
-   
+
   .cart{
       cursor: pointer;
       font-weight: bold;
@@ -81,11 +144,11 @@
   input[type=text]{
       color: #949494;
       background-color:#FFF;
-      border: 1px s olid rgb(219, 207, 207);
+      border: 1px solid rgb(219, 207, 207);
       padding: 9px 23px;
       border-radius: 3px;
       box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
-  }
+    }
   
   input[type=text]:focus{
       outline: none;
