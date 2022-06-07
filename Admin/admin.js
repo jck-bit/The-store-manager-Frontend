@@ -65,6 +65,14 @@ addItem.addEventListener('submit', function(e){
     })
   });
 
-  document.getElementById("back").addEventListener('click', function(){
+document.getElementById("back").addEventListener('click', function(){
     window.location.href = "./create.html"
+})
+
+document.getElementById("logout").addEventListener('click', function(){
+  window.location.href = "./Login.html"
+})
+
+document.getElementById("click_me").addEventListener('click', function(){
+  window.location.href = "./admin-profile.html"
 })
