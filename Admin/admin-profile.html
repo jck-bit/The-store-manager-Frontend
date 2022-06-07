@@ -10,11 +10,22 @@
 </head>
 <body>
   <div class="container">
+    <div class="navbar-home">
+      <div class="navbar-menu">
+        <ul>
+           <div class="back" id="profile" onclick=" return go()">
+            <i class="material-icons">arrow_back</i>
+          </div> 
+          <!-- <li class="loginbar"><a href="../cart/Cart.html">View Cart</a></li> -->
+          <li class="Logout" id="login" onclick="return log()"><i class="material-icons">keyboard_return</i>Log out</li>
+        </ul>
+      </div>
+    </div>
     <div class="header">
       <div class="store">
-        <div class="back" id="profile" onclick="return go()">
+        <!-- <div class="back" id="profile" onclick="return go()">
             <i class="material-icons">arrow_back</i>
-          </div>
+          </div> -->
         <div class="head">
           <h1>Kayas</h1>
         </div>
@@ -58,6 +69,12 @@
         document.getElementById("profile").addEventListener("click", function(){
             window.location.href = "./create.html";
         });
+    }
+
+    function log(){
+      document.getElementById('login').addEventListener('click', function(){
+        window.location.href = "./Login.html";
+      });
     }
 </script>
 </html>
