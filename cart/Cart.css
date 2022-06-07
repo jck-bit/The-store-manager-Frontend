@@ -250,3 +250,35 @@ h3{
       flex-direction: column;
     }
   }
+
+  .bottom-border{
+    margin-left: 50px;
+    margin-right: 50px;
+    border-top: 3px solid rgb(204, 201, 201);
+    margin-top: 130px;
+}
+
+@media screen and(max-width: 800px) {
+    .bottom-border{
+        margin-top: 30px;
+    }
+    
+}
+
+.rights{
+    text-align: center;
+    font-size: 14px;
+    font-style:italic;
+    padding: 10px;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+li .material-icons{
+    margin-right: 10px;
+    cursor: pointer;
+}

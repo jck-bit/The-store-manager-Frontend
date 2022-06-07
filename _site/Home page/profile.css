@@ -1,8 +1,76 @@
 *{
     padding: 0;
     margin: 0;
-    font-family: Tahoma;
+    font-family: serif;
   }
+
+
+  .navbar-menu{
+    padding-top: 20px;
+    height: 60px;
+    border-bottom: 1px solid #303641;   
+   
+}
+
+.navbar-menu ul{
+   text-decoration: none;
+   list-style: none;
+   margin: 0;
+   padding: 0;
+   display: flex;
+   justify-content: space-around;  
+   float: right;
+   
+}
+
+
+.Logout{
+   margin-left: 100px;
+   border: none;
+   background-color:rgb(204, 201, 201);
+   padding: 3px 5px;
+   border-radius: 5px;
+   font-weight: bold;
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   cursor: pointer;
+}
+
+.Logout:hover{
+   transform: scale(0.9);
+}
+
+
+.material-icons{
+   background-color: transparent;
+}
+
+
+.loginbar{
+   border: none;
+   background-color: rgb(204, 201, 201);
+   border-radius: 5px;
+   padding: 10px;
+   display: flex;
+   justify-content: space-around;
+   cursor: pointer;
+}
+
+.loginbar:hover{
+   transform: scale(0.9);
+}
+
+li{
+   background-color: transparent;
+}
+
+a{
+   text-decoration: none;
+   color: #000000;
+   font-weight: bold;
+   background-color: transparent;
+}
   
 .header{
       margin-top: 50px;
@@ -39,6 +107,19 @@
        border-radius: 50%;
  }
   
+
+ .person{
+     display: flex;
+     align-items: center;
+     cursor: pointer;
+     font-weight: bold;
+ }
+ .image-jane{
+    height:30px;
+    width: 30px;
+    border-radius: 50%;
+    margin-right: 5px;
+ }
   .head{
       font-weight: normal;
       font-size: 20px;
@@ -109,7 +190,7 @@
 .btn-2{
     color: #FFF;
     position: absolute;
-    background-color: rgb(4, 134, 43); 
+    background-color:rgb(2, 2, 15); 
     border: none;
     border-radius: 5px;
     padding: 9px 30px;

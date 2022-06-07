@@ -165,7 +165,7 @@ input[type=text]{
 }
 
 .all-over{
-  border-bottom: 2.2px solid rgb(204, 201, 201);;
+  /* border-bottom: 2.2px solid rgb(204, 201, 201);; */
   margin: 20px;
 }
 
@@ -181,9 +181,9 @@ input[type=text]{
   padding: 5px;
   border: 2px solid rgb(204, 201, 201);
   border-radius: 5px;
-  box-shadow: -11px -6px 5px 0px rgba(0,0,0,0.27);
+  /* box-shadow: -11px -6px 5px 0px rgba(0,0,0,0.27);
   -webkit-box-shadow: -11px -6px 5px 0px rgba(0,0,0,0.27);
-  -moz-box-shadow: -11px -6px 5px 0px rgba(0,0,0,0.27);
+  -moz-box-shadow: -11px -6px 5px 0px rgba(0,0,0,0.27); */
 }
 
 .sales-info h2{
@@ -214,4 +214,30 @@ img{
 .date{
   padding-bottom: 10px;
   border-bottom:  2px solid rgb(204, 201, 201);
+}
+
+
+.bottom-border{
+  margin-left: 50px;
+  margin-right: 50px;
+  border-top: 3px solid rgb(204, 201, 201);
+  margin-top: 0px;
+}
+
+.rights{
+  text-align: center;
+  font-size: 14px;
+  font-style:italic;
+  padding: 10px;
+}
+
+ul{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+li .material-icons{
+  margin-right: 10px;
+  cursor: pointer;
 }
