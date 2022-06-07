@@ -12,7 +12,7 @@
   <div class="container">
     <div class="header">
       <div class="store">
-        <div class="back" id="back">
+        <div class="back" id="back" onclick="return redirect()">
           <i class="material-icons">arrow_back</i>
         </div>
         <div class="head">
@@ -22,55 +22,50 @@
           <input type="text" placeholder="search for items"> <button class="btn">search</button>
         </div>
         <div class="person">
-          <!-- <i class="material-icons">person</i> -->
+          <img src="../images /jane.png" alt="" class="image-jane">
           <span>Hi, Jane</span>
         </div>
-        <div class="cart" id="cart">
-          <i class="material-icons">add_shopping_cart</i>
-          <span>Cart</span>
-        </div>
       </div>
     </div>
-    <div class="personal-sales">
-        <div class="box-one">
-            <img src="../images /1 (1).jpg" alt="" class="image">
-            <p class="info">wireless Headsets</p>
-            <p class="price">KSh 2,200</p>
-            <p class="date">24/12/2029</p>
-        </div>
-    </div>
-    <div class="personal-sales">  
+    <div class="content">
       <div class="box-one">
-          <img src="../images /1 (1).jpg" alt="" class="image">
-          <p class="info">wireless Headsets</p>
-          <p class="price">KSh 2,200</p>
-          <p class="date">24/12/2029</p>
-      </div>
-  </div>
-  <div class="personal-sales">
-    <div class="box-one">
-        <img src="../images /1 (1).jpg" alt="" class="image">
-        <p class="info">wireless Headsets</p>
+        <img src="../images /1 (2).jpg" alt="" class="image">
+        <p class="info">Fontera</p>
         <p class="price">KSh 2,200</p>
         <p class="date">24/12/2029</p>
-    </div>
-   </div>
-   <div class="personal-sales">
-   <div class="box-one">
-      <img src="../images /1 (1).jpg" alt="" class="image">
-      <p class="info">wireless Headsets</p>
+      </div>
+      <div class="box-one">
+        <img src="../images /downy.jpg" alt="" class="image">
+        <p class="info">Downy </p>
+        <p class="price">KSh 2,200</p>
+        <p class="date">24/12/2029</p>
+     </div>
+     <div class="box-one">
+      <img src="../images /1.jpg" alt="" class="image">
+      <p class="info">Downy </p>
       <p class="price">KSh 2,200</p>
       <p class="date">24/12/2029</p>
-    </div>
-    </div>
-  <div class="personal-sales">
-  <div class="box-one">
-    <img src="../images /1 (1).jpg" alt="" class="image">
-     <p class="info">wireless Headsets</p>
-     <p class="price">KSh 2,200</p>
-     <p class="date">24/12/2029</p>
+   </div>
+     <div class="box-one">
+      <img src="../images /headphones.jpg" alt="" class="image">
+      <p class="info"> Headsets</p>
+      <p class="price">KSh 2,200</p>
+      <p class="date">24/12/2029</p>
+   </div>
+   <div class="box-one">
+    <img src="../images /guarana.jpg" alt="" class="image">
+    <p class="info"> Energy Drinks</p>
+    <p class="price">KSh 2,200</p>
+    <p class="date">24/12/2029</p>
+ </div>
   </div>
 </div>
-  </div>
+<script>
+  function redirect(){
+    document.getElementById('back').addEventListener('click', function(){
+      window.location.href = './profile.html';
+    });
+  }
+</script>
 </body>
 </html>

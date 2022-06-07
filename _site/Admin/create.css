@@ -3,18 +3,83 @@
     margin: 0;
     font-family: Tahoma;
   }
+
+  .navbar-menu{
+    padding-top: 20px;
+    height: 60px;
+    border-bottom: 1px solid #303641;   
+   
+}
+
+.navbar-menu ul{
+   text-decoration: none;
+   list-style: none;
+   margin: 0;
+   padding: 0;
+   display: flex;
+   justify-content: space-around;  
+   float: right;
+   
+}
+
+
+.Logout{
+   margin-left: 100px;
+   border: none;
+   background-color:rgb(204, 201, 201);
+   padding: 3px 5px;
+   border-radius: 5px;
+   font-weight: bold;
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   cursor: pointer;
+}
+
+.Logout:hover{
+   transform: scale(0.9);
+}
+
+.material-icons{
+   background-color: transparent;
+}
+
+.loginbar{
+   border: none;
+   background-color: rgb(204, 201, 201);
+   border-radius: 5px;
+   padding: 10px;
+   display: flex;
+   justify-content: space-around;
+   cursor: pointer;
+}
+.loginbar:hover{
+   transform: scale(0.9);
+}
+
+li{
+   background-color: transparent;
+}
+
+a{
+   text-decoration: none;
+   color: #000000;
+   font-weight: bold;
+   background-color: transparent;
+}
+
   
 .header{
-      margin-top: 50px;
-      display: flex;
-      position: sticky;
-      flex-direction: column;
-      justify-content: center;
-      height: 82px;
-      background-color: rgb(248, 248, 248);
-      box-sizing: border-box;
-      box-shadow: 0 4px 4px -4px rgb(0 0 0 / 12%);
-      position: relative;
+    margin-top: 50px;
+    display: flex;
+    position: sticky;
+    flex-direction: column;
+    justify-content: center;
+    height: 82px;
+    background-color: rgb(248, 248, 248);
+    box-sizing: border-box;
+    box-shadow: 0 4px 4px -4px rgb(0 0 0 / 12%);
+    position: relative;
   }
   
   .store{
@@ -27,34 +92,45 @@
   }
   .back{
     position: absolute;
-      left: 0;
-      top: 20;
-      cursor: pointer;
+    left: 0;
+    top: 20;
+    cursor: pointer;
 }
 
  .back:hover{
-       transform: scale(1.1);
-       border: 1px solid rgb(204, 201, 201);
-       border-radius: 50%;
+    transform: scale(1.1);
+    border: 1px solid rgb(204, 201, 201);
+    border-radius: 50%;
  }
   
   .head{
-      font-weight: normal;
-      font-size: 20px;
-      color:  #666060;
+    font-weight: normal;
+    font-size: 20px;
+    color:  #666060;
   }
   
   .input{
-      margin-bottom: 30px;
+    margin-bottom: 30px;
   }
   
   .person{
-      cursor: pointer;   
-      font-weight: bold;
+    cursor: pointer;   
+    font-weight: bold;
+    display: flex;
+    align-items: center;
   }
   
-  .person:hover{
-      color: greenyellow;
+
+  .image-yusuf{
+    height:30px;
+    width:30px;
+    border-radius: 50%;
+    margin-right: 5px;
+    border: 1px solid rgb(219, 207, 207);
+  }
+
+  .person{
+      font-weight: bold;
   }
   
   .cart{
@@ -62,9 +138,6 @@
       font-weight: bold;
   }
    
-  .cart:hover{
-      color: greenyellow;
-  }
   
   input[type=text]{
       color: #383333;
@@ -85,13 +158,9 @@
       cursor: pointer;
       border: none; 
       font-weight: bold;
-      background-color: rgb(182, 182, 49);  
+      background-color: #303641;  
+      color: #fff;
       margin-top: 40px;  
-  }
-
-  .btn:hover{
-      background-color: rgb(192, 192, 116);
-      transition: 1s;
   }
 
   .admin-flexes{
@@ -156,7 +225,8 @@
 
 .btn-2{
     position: absolute;
-    background-color: rgb(42, 197, 218); 
+    background-color: #303641;  
+    color: #fff;
     border: none;
     border-radius: 5px;
     padding: 9px 30px;

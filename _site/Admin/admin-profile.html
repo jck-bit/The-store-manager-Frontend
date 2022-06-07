@@ -10,16 +10,28 @@
 </head>
 <body>
   <div class="container">
+    <div class="navbar-home">
+      <div class="navbar-menu">
+        <ul>
+           <div class="back" id="profile" onclick=" return go()">
+            <i class="material-icons">arrow_back</i>
+          </div> 
+          <!-- <li class="loginbar"><a href="../cart/Cart.html">View Cart</a></li> -->
+          <li class="Logout" id="login" onclick="return log()"><i class="material-icons">keyboard_return</i>Log out</li>
+        </ul>
+      </div>
+    </div>
     <div class="header">
       <div class="store">
-        <div class="back" id="profile" onclick="return go()">
+        <!-- <div class="back" id="profile" onclick="return go()">
             <i class="material-icons">arrow_back</i>
-          </div>
+          </div> -->
         <div class="head">
           <h1>Kayas</h1>
         </div>
         <div class="person">
-          <i class="material-icons">person</i>
+          <!-- <i class="material-icons">person</i> -->
+          <img src="../images /new.png" alt="" class="image-yusuf">
           <span>Welcome Har</span>
         </div>
       </div>
@@ -47,7 +59,7 @@
       <div class="main-boxes">
         <p>View Sales records you've made...Also view the sales made by other individuals in the kayas store</p>
          </p>
-        <button class="btn-2">Personal sales</button>
+        <button class="btn-2">My Personal sales</button>
       </div>
     </div>
   </div>
@@ -57,6 +69,12 @@
         document.getElementById("profile").addEventListener("click", function(){
             window.location.href = "./create.html";
         });
+    }
+
+    function log(){
+      document.getElementById('login').addEventListener('click', function(){
+        window.location.href = "./Login.html";
+      });
     }
 </script>
 </html>

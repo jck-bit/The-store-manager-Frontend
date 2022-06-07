@@ -4,6 +4,8 @@
     font-family:  sans-serif;
     background-color: #ffffff;
 }
+
+
 .navbar-menu{
      padding-top: 20px;
      height: 60px;
@@ -189,9 +191,9 @@ a{
    margin:20px;
    padding: 10px;
    border: 2px solid rgb(204, 201, 201);
-   box-shadow: -11px 6px 0px 7px rgba(0,0,0,0.27);
+   /* box-shadow: -11px 6px 0px 7px rgba(0,0,0,0.27);
    -webkit-box-shadow: -11px -6px 5px 0px rgba(0,0,0,0.27);
-   -moz-box-shadow: -11px -6px 5px 0px rgba(0,0,0,0.27);
+   -moz-box-shadow: -11px -6px 5px 0px rgba(0,0,0,0.27); */
    
 }
 
@@ -285,12 +287,24 @@ button:hover{
 .bottom-border{
     margin-left: 50px;
     margin-right: 50px;
-    border-bottom: 3px solid rgb(204, 201, 201);
-    padding: 20px;
+    border-top: 3px solid rgb(204, 201, 201);
+    margin-top: 190px;
 }
 
 .rights{
     text-align: center;
     font-size: 14px;
     font-style:italic;
+    padding: 10px;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+li .material-icons{
+    margin-right: 10px;
+    cursor: pointer;
 }

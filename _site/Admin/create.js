@@ -23,3 +23,10 @@ document.getElementById("yoo").addEventListener('click', function(){
     window.location.href = "./admin-profile.html";
   });
 
+  document.getElementById("setback").addEventListener('click', function(){
+    window.location.href = "./product.html";
+  });
+
+  document.getElementById("logout").addEventListener('click', function(){
+    window.location.href = "./Login.html";
+  });
