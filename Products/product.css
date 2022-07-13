@@ -164,20 +164,23 @@ a{
     margin-top: 40px;
   }
   
-  
-  
+
   button:hover{
       transform: scale(1.1);
-  }
-
-.available-products{
-    display: flex;
-    justify-content: space-evenly;
 }
 
 .products-first{
     display: grid;
     grid-template-columns: auto auto auto ;
+}
+
+@media screen and (max-width:900px) {
+    .products-first{
+        display: grid;
+        grid-template-columns:  auto auto;
+        row-gap: 20px;
+        column-gap: 20px
+    }
 }
 
 .image{
@@ -188,14 +191,13 @@ a{
   padding: 20px;
   border-radius: 4px;
   border: 2px solid rgb(204, 201, 201);
-  /* box-shadow: -11px -6px 5px 0px rgba(0,0,0,0.27);
-  -webkit-box-shadow: -11px -6px 5px 0px rgba(0,0,0,0.27);
-  -moz-box-shadow: -11px -6px 5px 0px rgba(0,0,0,0.27);
- */
+
 }
+
 p{
     margin-left: 3px;
 }
+
 .image img{
     margin-right: 8px;
     height: 80px;
@@ -214,8 +216,7 @@ p{
 .item-check-orange{
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
-    
+    align-items: center;    
 }
 
 button{
@@ -231,8 +232,6 @@ button{
     margin-right: 3px;
     margin-left: 3px;
 }
-
-
 
 .item-check-green{
     font-weight: bold;
@@ -268,13 +267,4 @@ button{
     background-color: rgb(199, 0, 0);
     color: rgb(229, 226, 226);
     transition: .5s;
-}
-
-@media screen and (max-width:900px) {
-    .products-first{
-        display: grid;
-        grid-template-columns:  auto auto;
-        row-gap: 20px;
-        column-gap: 20px
-    }
 }
