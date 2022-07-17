@@ -16,10 +16,6 @@ async function get_products(url){
     console.log(data)
 
     products_container = document.getElementById('products_first')
-    // kate_angela = document.getElementById('products_first')
-    // image_div = document.getElementById('image')
-    // paragraph_icon = document.getElementById('icon')
-    // item_check = document.getElementById('item_check')
 
     for (let i = 0; i< data.length; i++){
         const div1 = document.createElement('div')
@@ -51,10 +47,6 @@ async function get_products(url){
        div4.appendChild(button_one)
        div4.appendChild(button_two)
        
-
-    
-        
-
         button_two.addEventListener('click', function(){
             button_two.textContent = 'Added'
             //if i click on the button again it will go back to the original text
@@ -63,10 +55,5 @@ async function get_products(url){
             })
         })
 
-
-        
-    }
-   
-}
-
+    }}
 get_products(api_url)

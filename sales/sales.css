@@ -4,11 +4,11 @@
     font-family:  sans-serif;
     background-color: #fff;
   }
+
   .navbar-menu{
     padding-top: 20px;
     height: 60px;
     border-bottom: 1px solid #303641;   
-   
 }
 
 .navbar-menu ul{
@@ -19,9 +19,7 @@
    display: flex;
    justify-content: space-around;  
    float: right;
-   
 }
-
 
 .Logout{
    margin-left: 100px;
@@ -40,11 +38,9 @@
    transform: scale(0.9);
 }
 
-
 .material-icons{
    background-color: transparent;
 }
-
 
 .loginbar{
    border: none;
@@ -157,33 +153,22 @@ input[type=text]{
 }
 
 .all-over{
-   padding: 20px;
-   display: grid;
-   grid-template-columns: auto auto auto ;
-   row-gap: 20px;
-   column-gap: 20px;
-}
-
-.all-over{
-  /* border-bottom: 2.2px solid rgb(204, 201, 201);; */
   margin: 20px;
 }
 
-@media screen and (max-width: 700px){
-  .all-over{
-    grid-template-columns: auto auto;
-  }
-}
-
 .one-sale{
-  width: 250px;
   display: flex;
   padding: 5px;
   border: 2px solid rgb(204, 201, 201);
   border-radius: 5px;
-  /* box-shadow: -11px -6px 5px 0px rgba(0,0,0,0.27);
-  -webkit-box-shadow: -11px -6px 5px 0px rgba(0,0,0,0.27);
-  -moz-box-shadow: -11px -6px 5px 0px rgba(0,0,0,0.27); */
+}
+
+
+.sales-info{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
 }
 
 .sales-info h2{
@@ -194,28 +179,7 @@ input[type=text]{
 
 img{
   height: 90px;
-
 }
-
-.quantity{
-  padding-bottom: 5px;
-  border-bottom: 2px solid rgb(204, 201, 201);
-}
-
-.visual{
-  margin-left: 30px;
-  font-weight: bold;
-}
-.total{
-  padding-bottom: 10px;
-  border-bottom:  2px solid rgb(204, 201, 201);
-}
-
-.date{
-  padding-bottom: 10px;
-  border-bottom:  2px solid rgb(204, 201, 201);
-}
-
 
 .bottom-border{
   margin-left: 50px;
