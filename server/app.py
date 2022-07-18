@@ -44,7 +44,7 @@ def create_product():
 
 #delete product
 @app.route('/products/<string:name>', methods=['DELETE'])
-@auth.login_required
+# @auth.login_required
 def delete_product(name):
     for product in products:
         if product['name'] == name:
