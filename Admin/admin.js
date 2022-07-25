@@ -17,7 +17,7 @@ async function get_products(url) {
   data = await response.json()
   console.log(data)
 
-  products_container = document.getElementById('admin')
+  products_container = document.getElementById('newest')
 
   for (let i = 0; i < data.length; i++) {
     div_1 = document.createElement('div')
@@ -35,7 +35,6 @@ async function get_products(url) {
     div_8 = document.createElement('div')
     button_1 = document.createElement('button')
     button_2 = document.createElement('button')
-
 
     div_1.classList.add('container-product')
     div_2.classList.add('input')
