@@ -30,3 +30,7 @@ document.getElementById("yoo").addEventListener('click', function(){
   document.getElementById("logout").addEventListener('click', function(){
     window.location.href = "./Login.html";
   });
+
+  document.getElementById('store_attendant').addEventListener('click', function(){
+    window.location.href = "./Attendants.html";
+  })
