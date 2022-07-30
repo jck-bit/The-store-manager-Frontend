@@ -1,4 +1,4 @@
-const api_url = ' http://127.0.0.1:5000/user/users'
+const api_url = ' http://127.0.0.1:5000/users'
 
 const fetchData = async (url) =>{
     response = await fetch(url)
@@ -23,7 +23,7 @@ for(i=0;i<data.users.length; i++){
     //when you click on the button it will delete the user from the database
     button_1.addEventListener('click', function(){
         fetch( users_deleted, {
-            method: 'DELETE'
+            method: 'DELETE' 
         })
         .then(function(){
             window.location.reload()
