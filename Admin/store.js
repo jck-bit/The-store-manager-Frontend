@@ -3,7 +3,7 @@ const api_url = ' http://127.0.0.1:5000/users'
 const fetchData = async (url) =>{
     response = await fetch(url)
     data = await response.json()
-    console.log(data.user)
+    console.log(data.users)
 
 const store_attendant = document.getElementById('store_attendant')
 
