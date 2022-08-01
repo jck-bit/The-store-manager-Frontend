@@ -18,6 +18,13 @@ for(i=0;i<data.users.length; i++){
     h1_1.textContent = `Name: ${data.users[i].name}`
     button_1.textContent = 'Delete User'
     button_2.textContent = 'View sales'
+    
+    button_2.addEventListener('click', function(){
+        window.location.href = `./sales.html`
+    })
+
+
+
     const users_deleted = `http://127.0.0.1:5000/user/${data.users[i].public_id}`
     
     //when you click on the button it will delete the user from the database
@@ -44,6 +51,9 @@ for(i=0;i<data.users.length; i++){
     div_1.appendChild(button_1)
     div_1.appendChild(button_2)
 
+
 }}
 
 fetchData(api_url)
+
+
