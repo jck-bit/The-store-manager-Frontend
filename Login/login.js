@@ -6,34 +6,30 @@ document.getElementById("login").addEventListener("click", function() {
  window.location.href = "./Admin/Login.html";
 });
 
-
-
-//if the value of password and username are not in the database, redirect to the login page, otherwise redirect to the home page and provide a token from the backend
-
-const login = document.getElementById("submit");
-login.addEventListener("click", function() {
-  const username = document.getElementById("username").value;
-  const password = document.getElementById("password").value;
-  const data = {
-    username: username,
+//get the users input from the login page and check if the name and password are same as the ones in the database if so then redirect to the home page if not then display an error message
+document.getElementById("submit").addEventListener("click", function() {
+  var name = document.getElementById("username").value;
+  var password = document.getElementById("password").value;
+  var url = 'http://localhost:5000/token';
+  var data = {
+    name: name,
     password: password
   };
-  const options = {
-    method: "POST",
+  var response = fetch(url, {
+    method: 'POST',
+    body: JSON.stringify(data),
     headers: {
-      "Content-Type": "application/json"
-    },
-    body: JSON.stringify(data)
-  };
-  fetch("http://127.0.0.1:5000/login", options)
-    .then(response => response.json())
-    .then(data => {
-      if (data.token) {
-        localStorage.setItem("token", data.token);
-        window.location.href = "./Home page/Home.html";
-      } else {
-        alert("Invalid username or password");
-      }
-    });
+      'Content-Type': 'application/json'
+    }})
+    .then(function(response) {
+    return response.json();
+  }).then(function(data) {
+    if (data.success) {
+      window.location.href = "./Admin/Home.html";
+
+    } else {
+     alert("Wrong username or password");
+    }
+  });
 }
-)
+);
