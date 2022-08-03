@@ -24,7 +24,6 @@ for(i=0;i<data.users.length; i++){
     })
 
 
-
     const users_deleted = `http://127.0.0.1:5000/user/${data.users[i].public_id}`
     
     //when you click on the button it will delete the user from the database
