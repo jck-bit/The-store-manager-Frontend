@@ -30,8 +30,15 @@ class Sales(db.Model):
     total_sales = db.Column(db.Integer)
     user_id = db.Column(db.Integer)
 
+class Product(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.String(50))
+    price = db.Column(db.Integer)
+    Quantity = db.Column(db.Integer)
+
 @app.route('/token', methods=['POST'])
 def create_token():
+
     username = request.json.get('username')
     password = request.json.get('password')
     if not username or not password:
@@ -169,6 +176,35 @@ def get_all_sales():
         output.append(sale_data)
 
     return jsonify({'sales': output})
+
+
+@app.route('/products', methods=['POST'])
+def post_product():
+    data = request.get_json()
+
+    new_product = Product(name=data['name'], price=data['price'], Quantity=data['Quantity'])
+
+    db.session.add(new_product)
+    db.session.commit()
+
+    return jsonify({'message': 'New product Added!'})
+
+@app.route('/products', methods=['GET'])
+def get_all_products():
+    products = Product.query.all()
+
+    output = []
+
+    for product in products:
+        
+        product_data = {}
+        product_data['name'] = product.name
+        product_data['price'] = product.price
+        product_data['Quantity'] = product.Quantity
+        output.append(product_data)
+
+    return jsonify({'products': output})
+
 
 if __name__ == '__main__':
     app.run(debug=True)
