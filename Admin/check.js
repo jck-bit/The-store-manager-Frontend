@@ -16,11 +16,11 @@ const api_url = 'http://127.0.0.1:5000/products'
 async function get_products(url){
     response = await fetch(url)
     data  =  await response.json()
-    console.log(data)
+    console.log(data.products)
 
     products_container = document.getElementById('products_first')
 
-    for (let i = 0; i< data.length; i++){
+    for (let i = 0; i< data.products.length; i++){
         const div1 = document.createElement('div')
         const div2 = document.createElement('div')
         const div3 = document.createElement('div')
@@ -30,8 +30,8 @@ async function get_products(url){
         const button_two = document.createElement('button')
 
 
-        paragraph_one.textContent = data[i].name
-        button_one.textContent = `${data[i].Quantity} in stock`
+        paragraph_one.textContent = data.products[i].name
+        button_one.textContent = `${data.products[i].Quantity} in stock`
         button_two.textContent = 'Add to cart'
         
         div1.classList.add('products-first')
