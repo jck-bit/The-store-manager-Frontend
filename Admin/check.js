@@ -31,7 +31,7 @@ async function get_products(url){
 
 
         paragraph_one.textContent = data.products[i].name
-        button_one.textContent = `${data.products[i].Quantity} in stock`
+        button_one.textContent = `${data.products[i].Quantity} in stock `
         button_two.textContent = 'Add to cart'
         
         div1.classList.add('products-first')
