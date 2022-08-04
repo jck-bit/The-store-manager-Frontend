@@ -205,6 +205,37 @@ def get_all_products():
 
     return jsonify({'products': output})
 
+@app.route('/products/<name>', methods=['GET'])
+def get_one_product(name):
+    product = Product.query.filter_by(name=name).first()
+
+    if not product:
+        return jsonify({'message': 'No product found'})
+
+    product_data = {}
+    product_data['name'] = product.name
+    product_data['price'] = product.price
+    product_data['Quantity'] = product.Quantity
+
+    return jsonify(product_data)
+
+@app.route('/products/<name>', methods=['PUT'])
+def update_product(name):
+    data = request.get_json()
+
+    product = Product.query.filter_by(name=name).first()
+
+    if not product:
+        return jsonify({'message': 'No product found'})
+
+    product.name = data['name']
+    product.price = data['price']
+    product.Quantity = data['Quantity']
+
+    db.session.commit()
+
+    return jsonify({'message': 'Product has been updated!'})
+
 
 if __name__ == '__main__':
     app.run(debug=True)
