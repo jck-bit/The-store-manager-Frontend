@@ -1,3 +1,4 @@
+from functools import wraps
 from flask import Flask, request, jsonify, make_response
 from flask_sqlalchemy import SQLAlchemy
 from flask_cors import CORS
@@ -235,6 +236,20 @@ def update_product(name):
     db.session.commit()
 
     return jsonify({'message': 'Product has been updated!'})
+
+
+@app.route('/products/<name>', methods=['DELETE'])
+def delete_product(name):
+    product = Product.query.filter_by(name=name).first()
+
+    if not product:
+        return jsonify({'message': 'No product found'})
+
+    db.session.delete(product)
+    db.session.commit()
+
+    return jsonify({'message': 'Product has been deleted!'})
+
 
 
 if __name__ == '__main__':
