@@ -24,8 +24,8 @@ async function get_sales(url){
       const p_3 = document.createElement('p')
 
       p_1.textContent = data[i].name
-      p_2.textContent = data[i].Today_sales
-      p_3.textContent = data[i].Total_sales
+      p_2.textContent = data[i].sale.total_sales
+      p_3.textContent = data[i].sale.user_id
       
      div_1.classList.add('one-sale')
      div_2.classList.add('sales-info')

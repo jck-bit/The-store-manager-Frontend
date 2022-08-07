@@ -5,7 +5,6 @@ document.getElementById("back").addEventListener('click', function(){
 document.getElementById("logout").addEventListener('click', function(){
     window.location.href = "../index.html"
 })
-
 //fetch products from api
 
 const api_url = 'http://127.0.0.1:5000/products'
@@ -17,7 +16,7 @@ async function get_products(url){
 
     products_container = document.getElementById('products_first')
 
-    for (let i = 0; i< data.length; i++){
+    for (let i = 0; i< data.products.length; i++){
         const div1 = document.createElement('div')
         const div2 = document.createElement('div')
         const div3 = document.createElement('div')
@@ -27,8 +26,8 @@ async function get_products(url){
         const button_two = document.createElement('button')
 
 
-        paragraph_one.textContent = data[i].name
-        button_one.textContent = `${data[i].Quantity} in stock`
+        paragraph_one.textContent = data.products[i].name
+        button_one.textContent = `${data.products[i].Quantity} in stock`
         button_two.textContent = 'Add to cart'
         
         div1.classList.add('products-first')
@@ -57,3 +56,14 @@ async function get_products(url){
 
     }}
 get_products(api_url)
+
+//whenever i search for a product i want to get the product from the api and display it in the products_container div
+//i want to get the product from the api and display it in the products_container div 
+
+const search_button = document.getElementById('search')
+const search_input = document.getElementById('search_input')
+
+const search_url = 'http://127.0.0.1:5000/products/products'
+
+
+
