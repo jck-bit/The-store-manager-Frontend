@@ -10,7 +10,7 @@ document.getElementById("login").addEventListener("click", function() {
 document.getElementById("submit").addEventListener("click", function() {
   var name = document.getElementById("username").value;
   var password = document.getElementById("password").value;
-  var url = 'http://localhost:5000/token';
+  var url = 'http://localhost:5000/login';
   var data = {
     name: name,
     password: password
@@ -21,6 +21,9 @@ document.getElementById("submit").addEventListener("click", function() {
     headers: {
       'Content-Type': 'application/json'
     }})
+
+    console.log(response)
+
     .then(function(response) {
     return response.json();
   }).then(function(data) {
