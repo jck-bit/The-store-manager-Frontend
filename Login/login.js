@@ -40,7 +40,7 @@ document.getElementById('submit').addEventListener('click', function() {
     })
   }
 
-  fetch( 'http://localhost:5000/login', opt)
+  fetch( 'https://flask-app-store-manager.herokuapp.com/login', opt)
   .then(res=> {
     if (res.status == 200) return res.json()
     else alert("There has been some errors")
