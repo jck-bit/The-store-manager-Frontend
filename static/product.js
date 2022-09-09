@@ -7,13 +7,13 @@ document.getElementById("logout").addEventListener('click', function(){
 })
 //fetch products from api
 
-const api_url = 'http://127.0.0.1:5000/products'
+const api_url = 'https://flask-app-store-manager.herokuapp.com/products'
 
 async function get_products(url){
     response = await fetch(url)
     data  =  await response.json()
     console.log(data)
-
+   
     products_container = document.getElementById('products_first')
 
     for (let i = 0; i< data.products.length; i++){
@@ -30,6 +30,7 @@ async function get_products(url){
         button_one.textContent = `${data.products[i].Quantity} in stock`
         button_two.textContent = 'Add to cart'
         
+
         div1.classList.add('products-first')
         div2.classList.add('image')
         div3.classList.add('paragraph-icon')
@@ -45,7 +46,8 @@ async function get_products(url){
        div3.appendChild(div4)
        div4.appendChild(button_one)
        div4.appendChild(button_two)
-       
+        
+
         button_two.addEventListener('click', function(){
             button_two.textContent = 'Added'
             //if i click on the button again it will go back to the original text
@@ -53,7 +55,6 @@ async function get_products(url){
                 button_two.textContent = 'Add to cart'
             })
         })
-
     }}
 get_products(api_url)
 

@@ -1,60 +1,43 @@
 *{
-    padding: 0;
     margin: 0;
-    font-family:  sans-serif;
-  }
-
-  .navbar-menu{
-    padding-top: 20px;
-    height: 60px;
-    border-bottom: 1px solid #303641;   
-   
+    box-sizing: border-box;
+    padding: 0;
+     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.navbar-menu ul{
-   text-decoration: none;
-   list-style: none;
-   margin: 0;
-   padding: 0;
-   display: flex;
-   justify-content: space-around;  
-   float: right;
-   
+.navbar{
+    padding-top: 5px;
+    padding-bottom: 20px;
+    background-color: rgb(146, 208, 228);
 }
 
-
-.Logout{
-   margin-left: 100px;
-   border: none;
-   background-color:rgb(204, 201, 201);
-   padding: 3px 5px;
-   border-radius: 5px;
-   font-weight: bold;
-   display: flex;
-   justify-content: space-evenly;
-   align-items: center;
-   cursor: pointer;
+ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
-.Logout:hover{
-   transform: scale(0.9);
+@media screen and (max-width:800px) {
+    ul{
+        display: flex;
+        flex-direction: column-reverse;
+    }
 }
 
-.material-icons{
-   background-color: transparent;
+ul a{
+    background-color: rgb(219, 229, 238);
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    padding: 4px;
+    margin: 3px;
+    color: #333;
 }
 
-.loginbar{
-   border: none;
-   background-color: rgb(204, 201, 201);
-   border-radius: 5px;
-   padding: 10px;
-   display: flex;
-   justify-content: space-around;
-   cursor: pointer;
-}
-.loginbar:hover{
-   transform: scale(0.9);
+ul h1{
+    font-weight: bold;
+    color: white;
 }
 
 li{
@@ -97,48 +80,11 @@ a{
       cursor: pointer;
 }
 
- .back:hover{
-       transform: scale(1.1);
-       border: 1px solid rgb(204, 201, 201);
-       border-radius: 50%;
- }
-  
-  .head{
-      font-weight: normal;
-      font-size: 20px;
-      color:  #666060;
-  }
-  
-  .input{
+ .input{
       margin-bottom: 30px;
   }
-  
-  .image-jane{
-        height:30px;
-        width:30px;
-        border-radius: 50%;
-        margin-right: 5px;
-  }
-  .person{
-      cursor: pointer;   
-      font-weight: bold;
-      display: flex;
-      align-items: center;
-  }
-  
-  .person:hover{
-      color: rgb(114, 173, 24);
-  }
-  
-  .cart{
-      cursor: pointer;
-      font-weight: bold;
-  }
-   
-  .cart:hover{
-      color: rgb(114, 173, 24);
-  }
-  
+
+
   input[type=text]{
       color: #383333;
       background-color:#FFF;
