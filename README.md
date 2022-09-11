@@ -25,4 +25,4 @@ To open [click me](https://jck-bit.github.io/Level_up/)
 
 # Authors
 
- Jack -[Jck Bit]()
+ Jack -[Jck Bit](https://github.com/jck-bit)
