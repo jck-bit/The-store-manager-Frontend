@@ -40,7 +40,7 @@ for(i=0;i<data.users.length; i++){
 
     div_1.classList.add('all')
     div_2.classList.add('personal_details')
-    button_2.classList.add('btn')
+    button_2.classList.add('btn_view_sales')
     button_1.classList.add('btn')
     
 
