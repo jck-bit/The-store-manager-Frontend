@@ -1,12 +1,3 @@
-document.getElementById("back").addEventListener('click', function(){
-    window.location.href = "../Home page/Home.html"
-})
-
-document.getElementById("logout").addEventListener('click', function(){
-    window.location.href = "../index.html"
-})
-//fetch products from api
-
 const api_url = 'https://flask-app-store-manager.herokuapp.com/products'
 
 async function get_products(url){
@@ -26,8 +17,8 @@ async function get_products(url){
         const button_two = document.createElement('button')
 
 
-        paragraph_one.textContent = data.products[i].name
-        button_one.textContent = `${data.products[i].Quantity} in stock`
+        paragraph_one.textContent = `${data.products[i].name}: ${data.products[i].Quantity} in stock` 
+        button_one.textContent = 'Delete Product'
         button_two.textContent = 'Add to cart'
         
 
@@ -36,7 +27,7 @@ async function get_products(url){
         div3.classList.add('paragraph-icon')
         div4.classList.add('item_check')
         paragraph_one.classList.add('paragraph-icon')
-        button_one.classList.add('button_one')
+        button_one.classList.add('Delete_btn')
         button_two.classList.add('button_two')
 
        products_container.appendChild(div1)
@@ -44,8 +35,8 @@ async function get_products(url){
        div2.appendChild(div3)
        div3.appendChild(paragraph_one)
        div3.appendChild(div4)
-       div4.appendChild(button_one)
        div4.appendChild(button_two)
+       div4.appendChild(button_one)
         
 
         button_two.addEventListener('click', function(){
