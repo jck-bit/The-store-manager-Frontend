@@ -43,3 +43,8 @@
     color: white;
     font-size: medium;
   }
+
+  a:is(:link, :active, :visited).active {
+    color: black;
+    background-color: white;
+  }
