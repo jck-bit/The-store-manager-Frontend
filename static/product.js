@@ -47,15 +47,7 @@ async function get_products(url){
             })
         })
     }}
-get_products(api_url)
-
-//whenever i search for a product i want to get the product from the api and display it in the products_container div
-//i want to get the product from the api and display it in the products_container div 
-
-const search_button = document.getElementById('search')
-const search_input = document.getElementById('search_input')
-
-const search_url = 'http://127.0.0.1:5000/products/products'
 
 
-
+    get_products(api_url)
+    

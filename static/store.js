@@ -1,5 +1,7 @@
 const api_url = 'https://flask-app-store-manager.herokuapp.com/users'
 
+
+
 const fetchData = async (url) =>{
     response = await fetch(url)
     data = await response.json()

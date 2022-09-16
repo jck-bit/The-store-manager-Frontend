@@ -1,30 +1,28 @@
- function login() {
-  let name = document.getElementById('name').value
+login = () => {
+  let username = document.getElementById('name').value
   let password = document.getElementById('password').value
   
-  // let const_api_url = 'https://flask-app-store-manager.herokuapp.com/login'
-let const_api_url = 'http://127.0.0.1:5000/login'
-
-  fetch(const_api_url, {
-    method:'POST',
-    headers: {
-      'Accept': 'application/json, text/plain, */*',
-      'content-type':'application/json'
-    },
-    
-    body:JSON.stringify({name:name, password:password, })
-  })
-  .then((res) =>res.json())
-  .then((data) =>{
-    if(data.status === 'Failed'){
-     document.getElementById('danger').style.color = 'red'
-     document.getElementById('danger').innerHTML = data.message
-    }
-  })
-   if(data.status === 'Success'){
-    window.location.assign("../home/home.html")
-   }
-   console.log('You are now logged in')
-
+  var myHeaders = new Headers();
+  myHeaders.append("Content-Type", "application/json");
+  myHeaders.append("Cookie", "session=.eJwlzsENwzAIAMBd_O4D7AAmy0TGgNqv07yq7t5IHeCk-5QjV5zPsr_XFY9yvLzsxQabdA5k9VYtgM2TIEFym1OzDSHf0MZIYLbsCn2o-KhuRKBxIzHmqAYpraOqVpo2tHJzUhbxYGJ2og0xtaUzZADihNms3JHrjPXfYPn-AP3EL30.YyRxpg.e5Ta_R1W2w5wtW-qToRcBJGuQKY");
+  
+  var raw = JSON.stringify({
+    "username": username,
+    "password": password
+  });
+  
+  var requestOptions = {
+    method: 'POST',
+    headers: myHeaders,
+    body: raw,
+    redirect: 'follow'
+  };
+  
+  fetch("http://127.0.0.1:5000/login", requestOptions)
+    .then(response => response.text())
+    .then(result => console.log(result))
+    .catch(error => console.log('error', error));
+   
 }
+
 
