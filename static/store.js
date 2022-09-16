@@ -17,7 +17,7 @@ for(i=0;i<data.users.length; i++){
     const button_2 = document.createElement('button')
     const h1_1 = document.createElement('h1')
    
-    h1_1.textContent = `Name: ${data.users[i].name}`
+    h1_1.textContent = `Name: ${data.users[i].username}`
     button_1.textContent = 'Delete User'
     button_2.textContent = 'View sales'
     
