@@ -1,9 +1,7 @@
 
   .header{
-      margin-top: 50px;
+      align-items: center;
       display: flex;
-      position: sticky;
-      flex-direction: column;
       justify-content: center;
       height: 82px;
       background-color: rgb(248, 248, 248);
@@ -12,8 +10,8 @@
       position: relative;
   }
   
+
   .store{
-      position: absolute;
       width: 100%;
       display: flex;
       justify-content: space-evenly;
@@ -38,12 +36,12 @@
       outline: none;
   }
   
-  .btn{
+
+  button{
     padding: 9px 10px;
     border-radius: 4px;
     cursor: pointer;
     border: none;   
-    color: #fff;
     background-color: #303641;
     border: 0 none;
     border-radius: 4px;
@@ -53,6 +51,7 @@
 
 .products-first{
     display: grid;
+    background-color: alice;
     grid-template-columns: auto auto auto ;
 }
 
@@ -75,6 +74,34 @@ p{
     margin-left: 3px;
 }
 
+
+
+.button_two{
+    background-color: #285469;
+} 
+
+
+.products_first_container{
+    padding: 20px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+@media screen and (max-width:900px) {
+    .products-first_container{
+        display: grid;
+        grid-template-columns:  auto auto;
+    }
+}
+
+
+.products_first_div{
+    border: 1px solid;
+    width: fit-content;
+    padding: 20px;
+    border-radius: 4px;
+}
+
 button{
     margin-top: 10px;
     border: none;
@@ -85,10 +112,10 @@ button{
     color: rgb(246, 239, 239);
 }
 
-.button_two{
-    background-color: #285469;
-} 
-
 .Delete_btn{
     background-color: rgb(191, 24, 24);
+}
+
+.Edit_btn{
+    background-color: #333;
 }

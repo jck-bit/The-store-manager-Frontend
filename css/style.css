@@ -17,21 +17,22 @@ body {
     transform: translate(-50%, -50%);
 }    
 .container-login {
-    background-color: #285469;
+    background-color: #fff;
     position: relative;
     margin: auto;
     margin-top: 5em;
     padding-bottom: 2em;
     width: 340px;
+    border: 1px solid rgb(181, 177, 177);
     border-radius: 0.35em;
-    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.2);
+    /* box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.2); */
     text-align: center;
 }
 
 .title{
     position: relative;
-    background-color: #285469;
     width: 100%;
+    color: #333;
     padding: 20px 0px;
     border-radius: 0.35em;
     font-size: 22px;
@@ -41,15 +42,16 @@ body {
 .input{
     margin: 15px auto;
     width: 240px;
+    border: 1px solid rgb(181, 177, 177);
     border-radius: 4px;
     box-sizing: border-box;
     background-color: #fff;
+    color: #333;
     padding: 8px 0px;
     margin-top: 15px;
 }
 
 input[type=text],[type=password] {
-    color: #fff;
     margin: 0;
     color: #333;
     border: none;
