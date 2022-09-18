@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../static/home.js" defer></script>
+    <script src="../static/new_account.js"></script>
+    <link rel="stylesheet" href="../css/Navbar.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="navbar">
+        <nav>
+          <ul class="header-list">
+              <h1>The store manager</h1>
+              <a href="../home/home.html">Home</a>
+              <a href="../users/Attendants.html">users</a>
+              <a href="../Products/product.html">View products</a>
+              <a href="../cart/Cart.html"> view cart</a>
+              <a href="../account/account.html">My account</a>
+              <a href="../account/new_account.html">New Account</a>
+          </ul>
+        </nav>
+      </header>
+      <div class="login-container-body">     
+        <div class="container-login" id='container-login'>
+            <div class="title">New Account</div>
+            <form onsubmit="event.preventDefault()">
+                <div class="input">
+                    <input id="username" placeholder="username" type="text" required class="validate" autocomplete="off">
+                </div>
+                <div class=" input">
+                    <input id="password" placeholder="password" type="password" required  class="validate'"autocomplete ="validate" >
+                </div>
+                <div class=" input">
+                    <input id="confirm_password" placeholder="confirm_password" type="password" required  class="validate'"autocomplete ="validate" >
+                </div>
+                <p id="danger"></p>
+                <a onclick="create_account()"><input type="submit" value="Create Account" id="submit"></a>              
+            </form>
+        </div>
+        </div>
+</body>
+</html>

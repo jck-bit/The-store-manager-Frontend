@@ -17,7 +17,7 @@ login = () => {
     redirect: 'follow'
   };
   
-  fetch("https://flask-app-store-manager.herokuapp.com/login", requestOptions)
+fetch("https://flask-app-store-manager.herokuapp.com/login", requestOptions)
     .then(response => response.json())
     .then((result) =>{
       if (result.status === 'Failed'){
@@ -33,5 +33,3 @@ login = () => {
     .catch(error => console.log('error', error));
    
 }
-
-

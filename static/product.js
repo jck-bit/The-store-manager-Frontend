@@ -1,11 +1,13 @@
-const api_url = 'https://flask-app-store-manager.herokuapp.com/products'
+// const api_url = 'https://flask-app-store-manager.herokuapp.com/products'
+
+const api_url = 'http://127.0.0.1:5000/products'
 
 async function get_products(url){
     response = await fetch(url)
     data  =  await response.json()
     console.log(data)
    
-    products_container = document.getElementById('products_first')
+    let products_container = document.getElementById('products_first')
 
     for (let i = 0; i< data.products.length; i++){
         const div1 = document.createElement('div')
@@ -49,5 +51,29 @@ async function get_products(url){
     }}
 
 
-    get_products(api_url)
-    
+
+
+
+get_products(api_url)
+
+
+const input = document.getElementById('search')
+const card = document.querySelectorAll(".products-first");
+
+let timer;
+let sec = 500;
+
+function live_search(){
+   for (let i=0; i<card.length; i++ ){
+    if(card[i].innerText.toLowerCase().includes(input.value.toLowerCase())){
+       card[i].classList.remove("hidden")
+    }else{
+        card[i].classList.add("hidden")
+    }
+   }
+}
+
+input.addEventListener("keyup", function(){
+    clearTimeout(timer);
+    timer = setTimeout(live_search,1000)
+})
