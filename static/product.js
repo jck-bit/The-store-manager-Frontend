@@ -7,7 +7,7 @@ async function get_products(url){
     data  =  await response.json()
     console.log(data)
    
-    let products_container = document.getElementById('products_first')
+    products_container = document.getElementById('products_container')
 
     for (let i = 0; i< data.products.length; i++){
         const div1 = document.createElement('div')
