@@ -1,6 +1,6 @@
 // const api_url = 'https://flask-app-store-manager.herokuapp.com/products'
 
-const api_url = 'http://127.0.0.1:5000/products'
+const api_url = 'https://flask-app-store-manager.herokuapp.com/products'
 
 async function get_products(url){
     response = await fetch(url)
